@@ -1,0 +1,35 @@
+/**
+*   Word Count
+*   @author Tony Tran
+*
+*   This program reads UTF-8 text files from multiple directories and
+*   prints out the most frequently used words.
+*
+*   # Two Main Cases:
+*   If the path is a file then process the file normally.
+*   If the path is a directory: all files within that directory, including files
+*   within subdirectories will be processed.
+*
+*   This program was tested and compiled using Java 8.
+*
+*   This program has a minimum of two arguments to run.
+*   The first argument is the requested number of words to be printed out.
+*
+*   The next argument, and any other arbritary number of arguments following the first,
+*   are the directories or file names of where the user wants the program to read.
+*
+*   Each word will be printed out along with the number of times the values showed up
+*   from highest to lowest.
+*
+*   # Instructions:
+*
+*   Compile the program:
+*   ```
+*   javac WordCount.java
+*   ```
+*
+*   Run the program with the directories or filenames - ie:
+*   ```
+*   java WordCount 5 /test/ /test-two/new.txt
+*   ```
+*/
