@@ -155,8 +155,8 @@ class WordCount {
   private static void countWords(String content) {
     String[] words = content.split("\\s+");
     for (String word : words) {
-      word = word.toLowerCase().replaceAll("[^a-zA-Z-']", "");
-      if (word.isEmpty()) { continue; } // Skip. Edge case after removing punctuation.
+      word = word.toLowerCase().replaceAll("[^a-z-']", "");
+      if (word.isEmpty()) { continue; } // Skip if word is empty. Edge case after removing punctuation.
       incrementCount(word);
     }
   }
