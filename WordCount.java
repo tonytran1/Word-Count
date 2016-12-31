@@ -137,6 +137,7 @@ class WordCount {
       while ((line = reader.readLine()) != null) {
         countWords(line);
       }
+      reader.close();
     } catch (Exception e) {
       e.printStackTrace();
       System.exit(1);
