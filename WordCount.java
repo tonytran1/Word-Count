@@ -166,7 +166,7 @@ class WordCount {
   *
   *  @param word The word that will have its count incremented
   */
-  private static void incrementCount(String word) {
+  private synchronized static void incrementCount(String word) {
     if (wordCount.get(word) == null) {
       wordCount.put(word, 0);
     }
